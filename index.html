@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Ana De los Santos, estudiante de Ingeniería en Sistemas con especialización en Frontend, React, HTML5, CSS3, y JavaScript.">
+    <meta name="keywords" content="Frontend, Desarrollador, React, Portafolio, HTML5, CSS3, Ana De los Santos">
+    <meta name="author" content="Ana De los Santos">
+    <title>Ana De los Santos | Frontend Developer 💻</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" aria-label="Navegación Principal">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Ana De los Santos ✨</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about" aria-label="Ir a la sección Sobre Mí">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" aria-label="Ir a la sección Proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" aria-label="Ir a la sección Experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" aria-label="Ir a la sección Contacto">Contacto</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light ms-3" id="darkModeToggle" aria-label="Alternar modo oscuro y claro">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="homepage d-flex align-items-center vh-100 text-center text-white">
+        <div class="container">
+            <img src="https://cdn3.iconfinder.com/data/icons/data-science-set-01-2/65/20-512.png" alt="Ilustración de perfil de Ana De los Santos" class="rounded-circle mb-4" width="200" height="200">
+            <h1 class="display-3 fw-bold animate__animated animate__fadeInUp">Ana De los Santos</h1>
+            <p class="lead mt-3 fs-4 animate__animated animate__fadeInUp animate__delay-1s">
+                Estudiante de Ingeniería en Sistemas | Apasionada por React y la Experiencia de Usuario 🚀
+            </p>
+        </div>
+    </header>
+
+    <section id="about" class="py-5" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 id="about-heading" class="display-5 mb-4 text-dark"><i class="fas fa-user me-2"></i>Sobre Mí</h2>
+                    <p class="lead mb-5 text-dark">
+                        Soy Ana, futura Ingeniera en Sistemas, con una especialización autodidacta en desarrollo **Frontend**. Me enfoco en crear soluciones web **responsivas y accesibles**, utilizando **React** para componentes modulares y diseño limpio. Busco activamente mi primera oportunidad laboral para aplicar y expandir mis conocimientos en la industria Tech. ¡Siempre lista para un nuevo desafío de código! 📸
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-laptop-code fa-3x text-primary mb-3" aria-hidden="true"></i>
+                    <h5 class="fw-bold">React & Componentes</h5>
+                    <p>Familiarizada con el ecosistema de React, hooks, estado y componentes reutilizables.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-users fa-3x text-primary mb-3" aria-hidden="true"></i>
+                    <h5 class="fw-bold">Metodologías Ágiles</h5>
+                    <p>Conocimientos en Scrum y Git para la colaboración efectiva en equipo.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-bullseye fa-3x text-primary mb-3" aria-hidden="true"></i>
+                    <h5 class="fw-bold">Diseño Responsivo</h5>
+                    <p>Experiencia con Bootstrap para garantizar la visualización perfecta en cualquier dispositivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light" aria-labelledby="projects-heading">
+        <div class="container">
+            <h2 id="projects-heading" class="display-5 text-center mb-5 text-dark"><i class="fas fa-project-diagram me-2"></i>Proyectos Académicos y Personales</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="https://www.tucanit.com/wp-content/uploads/2021/10/almadraba.jpg" class="card-img-top" alt="Captura de un E-commerce ficticio">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">E-commerce de Ropa</h5>
+                            <p class="card-text">Maquetación de un sitio de comercio electrónico con grillas responsivas. **Tech:** HTML5, CSS3, Bootstrap 5.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Ver proyecto E-commerce de Ropa">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="https://www.tucanit.com/wp-content/uploads/2021/10/oficina.jpg" class="card-img-top" alt="Captura de un Dashboard de gestión de datos">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Gestor de Tareas (POC)</h5>
+                            <p class="card-text">Prueba de concepto de un panel administrativo con manipulación de datos en tiempo real. **Tech:** Vanilla JS, JSON, CSS Grid.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Ver proyecto Gestor de Tareas">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMIjzhc7m8zFXXhW09E_ZnBNVNRCAwdKZHAQ&s" class="card-img-top" alt="Captura de una App Móvil de Recetas">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">App Móvil de Recetas</h5>
+                            <p class="card-text">Diseño *mobile-first* de una aplicación de recetas. Enfoque en accesibilidad y navegación intuitiva. **Tech:** HTML, CSS, Media Queries.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Ver proyecto App Móvil de Recetas">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-5" aria-labelledby="experience-heading">
+        <div class="container">
+            <h2 id="experience-heading" class="display-5 text-center mb-5 text-dark"><i class="fas fa-briefcase me-2"></i>Experiencia</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card experience-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Asistente de Cátedra - Universidad X (2024 - Actual)</h5>
+                            <p class="card-text">Soporte en la materia de Programación Web. Ayuda en la corrección de proyectos basados en HTML/CSS/JS. Foco en la semántica y buenas prácticas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card experience-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Proyecto Personal - Portafolio V2 (2025)</h5>
+                            <p class="card-text">Implementación de un portafolio web con Bootstrap, Modo Oscuro persistente y optimización de SEO. Uso de Vanilla JS para interacciones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card experience-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Voluntariado - TechGirls (2023)</h5>
+                            <p class="card-text">Mentora de código en eventos de iniciación a la programación para jóvenes. Desarrollo de habilidades blandas y de enseñanza técnica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="display-5 text-center mb-5 text-dark"><i class="fas fa-envelope me-2"></i>Contáctame</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" aria-label="Formulario de Contacto">
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-dark">Nombre</label>
+                            <input type="text" class="form-control" id="name" required aria-required="true" placeholder="Tu nombre completo" aria-label="Introduce tu nombre completo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-dark">Email</label>
+                            <input type="email" class="form-control" id="email" required aria-required="true" placeholder="tu.email@ejemplo.com" aria-label="Introduce tu dirección de correo electrónico">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-dark">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="5" required aria-required="true" placeholder="¿En qué puedo ayudarte?" aria-label="Escribe tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                    </form>
+
+                    <div class="text-center mt-5">
+                        <h5 class="text-dark">Conéctate en Redes</h5>
+                        <a href="https://www.linkedin.com/in/anadelossantosficticio" target="_blank" class="text-decoration-none mx-3" aria-label="Perfil de LinkedIn"><i class="fab fa-linkedin fa-2x text-primary"></i></a>
+                        <a href="https://github.com/anadelossantosficticio" target="_blank" class="text-decoration-none mx-3 text-dark github-icon" aria-label="Perfil de GitHub"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="https://twitter.com/anadelossantosficticio" target="_blank" class="text-decoration-none mx-3" aria-label="Perfil de Twitter"><i class="fab fa-twitter fa-2x text-info"></i></a>
+                        <a href="https://www.instagram.com/anadelossantosficticio" target="_blank" class="text-decoration-none mx-3" aria-label="Perfil de Instagram"><i class="fab fa-instagram fa-2x text-danger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-0">© 2025 Ana De los Santos. Desarrollado con <i class="fas fa-heart text-danger"></i> y dedicación.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

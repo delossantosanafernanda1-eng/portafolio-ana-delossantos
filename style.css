@@ -1,0 +1,118 @@
+/* Variables CSS Globales para Coherencia de Colores y Modo Oscuro */
+:root {
+    /* Colores Light Mode */
+    --primary-color: #007bff;
+    --bg-light: #f8f9fa;
+    --text-light: #212529;
+    /* Colores Dark Mode base */
+    --bg-dark: #343a40;
+    --text-dark: #f8f9fa;
+    --card-border-light: #dee2e6;
+    --transition-speed: 0.3s;
+}
+
+/* Estilo Base del Body y Transición Suave */
+body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    padding-top: 56px;
+}
+
+/* ---------------------------------- */
+/* SOBREESCRITURA DEL MODO OSCURO */
+/* ---------------------------------- */
+body.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Overrides para el Modo Oscuro (CRÍTICO para evitar texto oscuro sobre fondo oscuro) */
+body.dark .bg-light {
+    background: var(--bg-dark) !important;
+}
+
+body.dark .text-dark,
+body.dark h2,
+body.dark p.lead,
+body.dark .form-label {
+    color: var(--text-dark) !important;
+}
+
+body.dark .navbar {
+    background: var(--bg-dark) !important;
+}
+
+body.dark .navbar-brand,
+body.dark .nav-link,
+body.dark i {
+    color: var(--text-dark) !important;
+}
+
+body.dark .card {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    border-color: var(--primary-color) !important;
+}
+
+/* Ajuste específico para el icono de GitHub */
+body.dark .github-icon i {
+    color: var(--text-dark) !important;
+}
+
+
+/* ---------------------------------- */
+/* Homepage (Hero) */
+/* ---------------------------------- */
+.homepage {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientShift 15s infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Animación fadeInUp suave y delay */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.homepage img {
+    border: 5px solid white;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+.animate__fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+.animate__delay-1s { animation-delay: 1.5s !important; }
+
+/* ---------------------------------- */
+/* Proyectos (Project Card) */
+/* ---------------------------------- */
+.project-card {
+    border: 2px solid var(--card-border-light);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: heartbeat 3s infinite alternate;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
